@@ -2,6 +2,14 @@
 
 A hands-on study of CUDA kernel performance, GPU memory hierarchy, warp divergence, memory latency, bandwidth, constant-memory access patterns, and global-memory coalescing.
 
+## Notebook
+
+The accompanying Google Colab notebook contains the **commands, CUDA implementations, experiments, and reasoning behind the experiments**, excluding the generated outputs.
+
+**[Open the CUDA Project Notebook](https://colab.research.google.com/drive/1mhdkjYhd5YjaT68HG6mMJrSiX1ArrIcY?usp=sharing)**
+
+---
+
 ## Week 1 — Warp Divergence & Control Flow
 
 * Implemented two basic CUDA vector-addition kernels:
@@ -47,3 +55,4 @@ Studied the characteristics and roles of major GPU memory spaces:
 * Implemented a naive CUDA matrix-transpose kernel.
 * Studied the impact of **non-coalesced global-memory accesses**, particularly the strided store pattern introduced during transposition.
 * Measured kernel performance using a custom harness to establish a baseline for comparison with optimized transpose implementations.
+
