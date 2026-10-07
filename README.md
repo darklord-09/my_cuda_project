@@ -6,7 +6,7 @@ A hands-on study of CUDA kernel performance, GPU memory hierarchy, warp divergen
 
 The accompanying Google Colab notebook contains the **commands, CUDA implementations, experiments, and reasoning behind the experiments**, excluding the generated outputs.
 
-**[Open the CUDA Project Notebook](https://colab.research.google.com/drive/1mhdkjYhd5YjaT68HG6mMJrSiX1ArrIcY?usp=sharing)**
+**[Open the CUDA Project Notebook](https://colab.research.google.com/drive/1qS08rgq1V0-E6YQskHhGY7OUS6bcCnKI)**
 
 ---
 
