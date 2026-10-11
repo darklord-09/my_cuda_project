@@ -58,26 +58,26 @@ Studied the characteristics and roles of major GPU memory spaces:
 
 ## Week 3 — GPU Memory Hierarchy & Memory Performance continued
 
-*Fixed the transpose kernel with shared-memory tiling to restore coalesced access
-*Handled shared-memory bank conflicts (the padding trick)
-*Parallel reduction kernel, progressing through the standard stages: naive → shared memory → warp-shuffle-based → divergence-free
+* Fixed the transpose kernel with shared-memory tiling to restore coalesced access
+* Handled shared-memory bank conflicts (the padding trick)
+* Parallel reduction kernel, progressing through the standard stages: naive → shared memory → warp-shuffle-based → divergence-free
 
 
 ## Week 4 - Roofline model
-*Learn the roofline model: how to tell whether a kernel is compute-bound or memory-bound, and why that determines which optimization is worth trying next
+* Learn the roofline model: how to tell whether a kernel is compute-bound or memory-bound, and why that determines which optimization is worth trying next
 
-*Implemented for every kernel made till week 4
+* Implemented for every kernel made till week 4
 
 ## Week 5 - Naive SGEMM 
 
-*Naive SGEMM (one thread per output element)
-*Fix global-memory coalescing
-*Correctness harness against cuBLAS output (not just against itself) — get this right now, since every later stage depends on trusting your correctness check
-*Record baseline GFLOPS and % of cuBLAS
+* Naive SGEMM (one thread per output element)
+* Fix global-memory coalescing
+* Correctness harness against cuBLAS output (not just against itself) — get this right now, since every later stage depends on trusting your correctness check
+* Record baseline GFLOPS and % of cuBLAS
 
 ## Week 6 - Tiled SGEMM
 
-*Shared-memory tiled SGEMM: block A and B into shared memory tiles to cut global-memory traffic
-*Re-benchmark, record the jump in % of cuBLAS
+* Shared-memory tiled SGEMM: block A and B into shared memory tiles to cut global-memory traffic
+* Re-benchmark, record the jump in % of cuBLAS
 
 
